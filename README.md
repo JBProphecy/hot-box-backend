@@ -2,7 +2,7 @@
 
 This repository serves as the backend for Hot Box.
 
-# Custom Packages
+## Custom Packages
 
 I've changed the way I use shared code between the frontend and the backend.
 
