@@ -12,9 +12,11 @@ export async function handleServerError(
   res: Response<ServerErrorResponseBody>,
   next: NextFunction)
 {
+  const message: string = "Server Error"
+  logger.failure(message)
   logger.error(err)
   logger.trace(err)
-  res.status(500).json({ type: "server-error", message: "Server Error" })
+  res.status(500).json({ type: "server-error", message: message })
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

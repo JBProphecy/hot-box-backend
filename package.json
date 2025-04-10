@@ -22,7 +22,7 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@jbprophecy/hot-box": "^1.3.0",
+    "@jbprophecy/hot-box": "^2.3.0",
     "@jbprophecy/validation": "^1.1.1",
     "argon2": "^0.41.1",
     "cookie-parser": "^1.4.7",

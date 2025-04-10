@@ -6,7 +6,7 @@ import dotenv from "dotenv"
 import { processString } from "@/utils/processString"
 import { processNumber } from "@/utils/processNumber"
 
-import { generateGlobalConfig, type GlobalConfig } from "@jbprophecy/hot-box"
+import { generateGlobalConfig, type GlobalConfig, } from "@jbprophecy/hot-box"
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
