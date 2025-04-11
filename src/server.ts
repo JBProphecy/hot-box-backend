@@ -5,13 +5,11 @@ import http from "http"
 import express, { type Express } from "express"
 import cookieParser from "cookie-parser"
 
-import { logger } from "@/config/logger"
-import { serverConfig } from "@/config/environment"
+import { logger } from "@/config"
+import { serverConfig } from "@/config"
 
-import { handleNetworkLogs } from "@/api/middleware/handleNetworkLogs"
+import { handleNetworkLogs, handleRouteNotFound, handleServerError } from "@/api/middleware"
 import { API_ROUTER } from "@/api/routers"
-import { handleRouteNotFound } from "@/api/middleware/handleRouteNotFound"
-import { handleServerError } from "@/api/middleware/handleServerError"
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

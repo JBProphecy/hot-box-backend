@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-import { logger } from "@/config/logger"
+import { logger } from "@/config"
 import type { Request, Response, NextFunction } from "express"
 import type { RouteNotFoundResponseBody } from "@jbprophecy/hot-box"
 
