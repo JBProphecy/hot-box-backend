@@ -9,7 +9,7 @@ import { logger } from "@/config/logger"
 import { serverConfig } from "@/config/environment"
 
 import { handleNetworkLogs } from "@/api/middleware/handleNetworkLogs"
-import { router as apiRouter } from "@/api/routes"
+import { API_ROUTER } from "@/api/routers"
 import { handleRouteNotFound } from "@/api/middleware/handleRouteNotFound"
 import { handleServerError } from "@/api/middleware/handleServerError"
 
@@ -39,7 +39,7 @@ export const Main = () => {
 
     // Custom Stuff
     application.use(handleNetworkLogs)
-    application.use("/api", apiRouter)
+    application.use("/api", API_ROUTER)
     application.use(handleRouteNotFound)
     application.use(handleServerError)
 
