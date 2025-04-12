@@ -1,0 +1,14 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+import type { Request, Response } from "express"
+import type { CreateAccountRawRequestBody, CreateAccountResponseBody, CreateAccountValidRequestBody } from "@jbprophecy/hot-box"
+import type { ValidBodyRequestProps } from "@/api/types"
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+type CreateAccountRequestProps = ValidBodyRequestProps<CreateAccountValidRequestBody>
+
+export type CreateAccountRequest = Request<{}, {}, CreateAccountRawRequestBody> & CreateAccountRequestProps
+export type CreateAccountResponse = Response<CreateAccountResponseBody>
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

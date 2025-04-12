@@ -5,12 +5,12 @@ export const API_ROUTER: Router = express.Router()
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// import { CREATE_ACCOUNT_ROUTE } from "@jbprophecy/hot-box"
-// import { CREATE_PROFILE_ROUTE } from "@jbprophecy/hot-box"
+import { CREATE_ACCOUNT_HANDLERS } from "@/api/modules/CreateAccount"
+import { CREATE_PROFILE_HANDLERS } from "@/api/modules/CreateProfile"
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// API_ROUTER[CREATE_ACCOUNT_ROUTE.method](CREATE_ACCOUNT_ROUTE.path)
-// API_ROUTER[CREATE_PROFILE_ROUTE.method](CREATE_PROFILE_ROUTE.path)
+API_ROUTER.post("/accounts", CREATE_ACCOUNT_HANDLERS)
+API_ROUTER.post("/profiles", CREATE_PROFILE_HANDLERS)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -9,7 +9,8 @@
     "start": "set NODE_ENV=production && tsx dist/server/src/server.js",
     "dev": "set NODE_ENV=development && nodemon --exec tsx src/server.ts",
     "build": "tsc",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "refresh-package": "npm uninstall @jbprophecy/hot-box && npm install @jbprophecy/hot-box"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.8",
@@ -22,7 +23,7 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@jbprophecy/hot-box": "^2.3.0",
+    "@jbprophecy/hot-box": "^2.4.4",
     "@jbprophecy/validation": "^1.1.1",
     "argon2": "^0.41.1",
     "cookie-parser": "^1.4.7",

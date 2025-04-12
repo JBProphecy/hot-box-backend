@@ -28,7 +28,7 @@ export const Main = () => {
 
     // Express Stuff
     application.use(cors({
-      origin: [serverConfig.client.ORIGIN],
+      origin: [serverConfig.CLIENT_ORIGIN],
       credentials: true
     }))
     application.use(express.urlencoded({ extended: true }))
