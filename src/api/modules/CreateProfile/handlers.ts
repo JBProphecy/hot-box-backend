@@ -71,7 +71,7 @@ async function handleCreateProfile(
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-export const CREATE_PROFILE_HANDLERS: readonly Handler[] = [
+export const CREATE_PROFILE_HANDLERS: Handler[] = [
   handleGetAccountAccessTokenFromHeader,
   handleVerifyAccountAccessToken,
   handleValidateCreateProfileRequestBody,

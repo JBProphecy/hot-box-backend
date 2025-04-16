@@ -68,7 +68,7 @@ async function handleCreateAccount(
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-export const CREATE_ACCOUNT_HANDLERS: readonly Handler[] = [
+export const CREATE_ACCOUNT_HANDLERS: Handler[] = [
   handleValidateCreateAccountRequestBody,
   handleCreateAccount
 ]

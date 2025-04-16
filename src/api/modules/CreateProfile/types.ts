@@ -2,8 +2,7 @@
 
 import type { Request, Response } from "express"
 import type { CreateProfileRawRequestBody, CreateProfileResponseBody, CreateProfileValidRequestBody } from "@jbprophecy/hot-box"
-import type { AccountAccessTokenVerificationRequestProps } from "@/api/types"
-import type { ValidBodyRequestProps } from "@/api/types"
+import type { AccountAccessTokenVerificationRequestProps, ValidBodyRequestProps } from "@/api/types"
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

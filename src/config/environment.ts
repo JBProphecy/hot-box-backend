@@ -17,6 +17,7 @@ if (NODE_ENV?.trim() === "development") { dotenv.config({ path: ".env.developmen
 type ServerEnvironment = {
   PORT: number
   CLIENT_ORIGIN: string
+  DATABASE_URL: string
   ACCOUNT_ACCESS_TOKEN_SECRET: string
   ACCOUNT_REFRESH_TOKEN_SECRET: string
   PROFILE_ACCESS_TOKEN_SECRET: string
@@ -33,6 +34,7 @@ function processServerEnvironment(): ServerEnvironment {
     const serverEnvironment: ServerEnvironment = {
       PORT: processNumber("PORT", false) || 3000,
       CLIENT_ORIGIN: processString("CLIENT_ORIGIN", true),
+      DATABASE_URL: processString("DATABASE_URL", true),
       ACCOUNT_ACCESS_TOKEN_SECRET: processString("ACCOUNT_ACCESS_TOKEN_SECRET", true),
       ACCOUNT_REFRESH_TOKEN_SECRET: processString("ACCOUNT_REFRESH_TOKEN_SECRET", true),
       PROFILE_ACCESS_TOKEN_SECRET: processString("PROFILE_ACCESS_TOKEN_SECRET", true),
@@ -60,6 +62,7 @@ type ServerConfig = {
   PORT: number
   APP_NAME: string
   CLIENT_ORIGIN: string
+  DATABASE_URL: string
   ACCOUNT_ACCESS_TOKEN_SECRET: string
   ACCOUNT_REFRESH_TOKEN_SECRET: string
   PROFILE_ACCESS_TOKEN_SECRET: string
@@ -79,6 +82,7 @@ function generateServerConfig(): ServerConfig {
       PORT: serverEnvironment.PORT,
       APP_NAME: globalConfig.APP_NAME,
       CLIENT_ORIGIN: serverEnvironment.CLIENT_ORIGIN,
+      DATABASE_URL: serverEnvironment.DATABASE_URL,
       ACCOUNT_ACCESS_TOKEN_SECRET: serverEnvironment.ACCOUNT_ACCESS_TOKEN_SECRET,
       ACCOUNT_REFRESH_TOKEN_SECRET: serverEnvironment.ACCOUNT_REFRESH_TOKEN_SECRET,
       PROFILE_ACCESS_TOKEN_SECRET: serverEnvironment.PROFILE_ACCESS_TOKEN_SECRET,

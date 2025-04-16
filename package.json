@@ -18,12 +18,13 @@
     "@types/express": "^5.0.1",
     "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "^22.14.0",
+    "@types/pg": "^8.11.13",
     "nodemon": "^3.1.9",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@jbprophecy/hot-box": "^2.4.4",
+    "@jbprophecy/hot-box": "^2.4.5",
     "@jbprophecy/validation": "^1.1.1",
     "argon2": "^0.41.1",
     "cookie-parser": "^1.4.7",
